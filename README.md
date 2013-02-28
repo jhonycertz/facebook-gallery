@@ -28,3 +28,20 @@ Bugs / Issues / Suggestions
 ---------------------------
 
 Please let us know if you see any bugs or issues. And by all means, if you can help make any improvements, please fork the project and help!
+
+Cambiar el Page Id: 
+
+Donde? especificamente!!! 
+
+Ejemplo: 
+
+<?php
+define(‘PAGE_ID’, ’00000000000000′);
+define(‘APP_ID’,”);
+define(‘APP_SECRET’,”);
+$face = new FacePageAlbum(PAGE_ID, $_GET['aid'], $_GET['aurl'], APP_ID, APP_SECRET);
+?>
+
+Veréis que hay 3 “define” del cuál solo nos interesa el primero, donde hay que substituir los “0000″ por el id de nuestra página de Facebook. En mi caso mi fanpage con la que hago los tests es “140083382761694″ , quedaría así:
+
+define(‘PAGE_ID’, ’188065314541169′);
