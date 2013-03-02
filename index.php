@@ -47,7 +47,12 @@
 	$cache = array('permission' => 'y',
 					'location' => 'cache', // ensure this directory has permission to read and write
 					'time' => 7200);
-	$gallery = new FBGallery($_GET['fid'],'y',$cache);
+					
+	//change ID
+	$gallery = new FBGallery($_GET['fid'],'y',$cache); 
+	//if you want to change the id of the facebook page replaces this line for this: 
+	//$gallery = new FBGallery('188065314541169','y',$cache); And where are the numbers put your id!!
+
 	?>
 </div>
 
